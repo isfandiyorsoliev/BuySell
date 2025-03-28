@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="static/css/style.css">
+<title>BuySell</title>
+<header>
+    <div class="container">
+        <img src="static/img/unnamed.png" width="35px" height="35px">
+        <h1>BuySell</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="/need_aut">Добавить объявления</a></li>
+                <li><a href="/about">О сайте</a></li>
+                <li><a href="/login" class="login-btn">Вход</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<br><br>
+<div style="display: flex;margin-left:auto;margin-right:auto;justify-content: flex-start ;max-width:1200px;padding:30px;flex-wrap:wrap;">
+
+    {% for n in products%}
+
+    <div class="apllications">
+        <h3>Объявление</h3>
+        <p>Наименование: {{n[1]}}</p>
+        <p>Тип: {{n[2]}}</p>
+        <p>Цена: {{n[3]}}</p>
+        <p>Описание: {{n[4]}}</p>
+        <p>Телефон: {{n[5]}}</p>
+        <p>Город: {{n[6]}}</p>
+
+        <center><h3>Фото</h3><img src="{{ 'static/img/'+n[7] }}" width="300px">
+        </center>
+    </div>
+
+    {% endfor %}
+</div>
+
+

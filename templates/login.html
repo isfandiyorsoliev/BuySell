@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вход</title>
+    <link rel="stylesheet" href="static/css/log.reg.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="static/img/unnamed.png" width="35px" height="35px">
+        <h1>BuySell</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about">О сайте</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<br><br>
+
+<h1 class="log_reg">Вход</h1>
+<form method='POST'>
+    <label>Логин (email):</label>
+    <input type="email" id="email" name="username">
+    <br>
+    <label>Пароль:</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <input type="submit" value="Войти">
+  <br>
+  <div class="error">{{error}}</div>
+</form>
+
+<a href="/register">Если нет аккаунта зарегистрируйтесь</a>
+</body>
+</html>

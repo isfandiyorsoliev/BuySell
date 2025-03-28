@@ -1,0 +1,15 @@
+.tegp {
+  border: 5px solid orange;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: LightYellow;
+  padding: 15px;
+  width: 1000;
+  height: auto;
+  border-radius: 20px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
